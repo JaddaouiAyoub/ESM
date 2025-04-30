@@ -1,0 +1,321 @@
+<!-- Logo fixé en haut à gauche -->
+<!-- Navbar avec logo et navigation fluide -->
+<section #section  class="fixed top-0 left-0 w-full z-50 bg-transparent px-6 py-4 flex items-center justify-between">
+  <!-- Logo -->
+  <div>
+    <a href="#home">
+      <img src="/logol.jpg" alt="Logo EasyStockMaroc" class="h-16 w-16">
+    </a>
+  </div>
+
+  <!-- Liens de navigation -->
+  <nav class="space-x-6 hidden md:flex ">
+    <a [ngClass]="textColorClass" href="#home" class=" font-semibold hover:text-yellow-400 transition duration-300">Home</a>
+    <a [ngClass]="textColorClass" href="#about" class=" font-semibold hover:text-yellow-400 transition duration-300">About</a>
+    <a [ngClass]="textColorClass" href="#features" class=" font-semibold hover:text-yellow-400 transition duration-300">Features</a>
+    <a [ngClass]="textColorClass" href="#objectives" class=" font-semibold hover:text-yellow-400 transition duration-300">Objectives</a>
+    <a [ngClass]="textColorClass" href="#service" class=" font-semibold hover:text-yellow-400 transition duration-300">Services</a>
+    <a [ngClass]="textColorClass" href="#contact" class=" font-semibold hover:text-yellow-400 transition duration-300">Contact</a>
+  </nav>
+</section>
+
+<section #section id="home" class="relative min-h-screen flex items-center justify-center text-white text-center bg-cover bg-center" style="background-image: url('/bjp.jpeg');">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <!-- Contenu centré avec bordure jaune -->
+  <div   class="relative z-10 px-6 max-w-4xl p-10 text-center ">
+    <h1 class="text-5xl md:text-3xl font-extrabold mb-4">🚀 EasyStockMaroc</h1>
+    <p class="text-xl md:text-6xl mb-6 font-medium">Smart Inventory & Supplier Management for SMEs</p>
+    <p class="text-blue-200 text-center text-lg md:text-3xl font-semibold max-w-xl mx-auto leading-relaxed">
+      Simplifiez, optimisez et suivez vos opérations d'inventaire<br class="hidden sm:inline">
+      et de fournisseurs en temps réel.
+    </p>
+    <!-- Bouton vers la section Contact -->
+    <div class="text-center mt-20">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSezWD8f-XyigoKhVnNj2Sy5KYVZnyPq8yFRisGigZ-C521ofg/viewform?usp=pp_url"
+         target="_blank"
+         class="inline-block bg-yellow-400 text-black font-semibold text-lg px-6 py-3 rounded-xl shadow-md
+            hover:bg-yellow-500 transform hover:scale-105 transition duration-300 animate-bounce hover:animate-none">
+        Start your free Trial
+      </a>
+    </div>
+    <p class="mt-3 text-sm text-gray-200">
+      No credit card required. <span class="font-medium">Try it free for 14 days</span>
+    </p>
+  </div>
+
+</section>
+
+<section #section  id="about" class="flex flex-col md:flex-row items-center justify-center px-6 py-12 bg-blue-50 min-h-screen">
+  <!-- Logo et encadrement à gauche -->
+  <div class="relative w-full md:w-1/2 flex justify-center items-center mb-10 md:mb-0">
+    <!-- Barre bleue haut -->
+    <div class="absolute top-0 w-[60%] h-4 bg-blue-900"></div>
+
+    <!-- Logo encadré -->
+    <div class="bg-white border border-gray-200 shadow-lg px-6 py-6 z-10">
+      <img src="/logol.jpg" alt="EasyStockMaroc Logo" class="w-60 mx-auto" />
+      <p class="text-center text-gray-600 mt-2 font-medium">Simplifiez. Optimisez. Réussissez.</p>
+    </div>
+
+    <!-- Barre bleue bas -->
+    <div class="absolute bottom-0 w-[60%] h-4 bg-blue-900"></div>
+  </div>
+
+  <!-- Partie texte à droite -->
+  <div class="w-full md:w-1/3 border border-gray-300 px-6 py-8 relative">
+    <h2 class="text-4xl font-extrabold text-blue-900 mb-4">ABOUT US</h2>
+
+    <!-- Badge jaune -->
+    <div class="inline-block bg-yellow-400 text-black font-semibold px-4 py-1 mb-4">
+      Smart Inventory and supply management
+    </div>
+
+    <p class="text-gray-800 mb-4">
+      Empowering Smart Supply Chains for Growing Businesses
+    </p>
+
+    <p class="text-gray-700 mb-4">
+      At <span class="font-bold text-blue-800">EasyStockMaroc</span>, we help businesses simplify inventory and supplier management through intuitive technology and real-time analytics.
+    </p>
+
+    <p class="text-gray-700 mb-4">
+      Built with passion and expertise, our platform is designed to optimize stock control, streamline supplier relations, and drive smarter operational decisions for SMEs.
+    </p>
+
+    <p class="text-gray-700">
+      With <span class="font-bold text-blue-800">EasyStockMaroc</span>, managing your stock becomes easier, faster, and smarter.
+    </p>
+
+    <!-- Petits cercles -->
+    <div class="flex justify-end items-center mt-6 space-x-2">
+      <span class="w-3 h-3 rounded-full bg-blue-900"></span>
+      <span class="w-3 h-3 rounded-full bg-gray-400"></span>
+      <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section FEATURES -->
+<section #section id="features" class="py-16 px-4 bg-blue-100">
+  <h2 class="text-blue-900 text-center text-xl md:text-3xl font-bold mb-4 uppercase">
+    We help IT companies scale engineering<br> capacity
+  </h2>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="flex justify-center">
+      <img src="/stock-login.jpg" alt="Demo platform" class="rounded shadow-lg max-w-full w-[500px]">
+    </div>
+    <div>
+      <ul class="space-y-6">
+        <li>
+          <h3 class="bg-blue-900 text-white px-4 py-2 font-semibold w-fit rounded">100% dédié aux PME marocaines</h3>
+          <ul class="list-disc ml-6 mt-2 text-blue-800 text-sm md:text-base">
+            <li>Optimisation de la gestion des stocks</li>
+            <li>Automatisation des commandes fournisseurs</li>
+            <li>Suivi en temps réel de la performance supply chain</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="bg-blue-900 text-white px-4 py-2 font-semibold w-fit rounded">Solution adaptée au marché local</h3>
+          <ul class="list-disc ml-6 mt-2 text-blue-800 text-sm md:text-base">
+            <li>Conçue pour répondre aux défis logistiques des PME marocaines</li>
+            <li>Pas besoin d'intégration complexe ou de formation technique</li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="bg-blue-900 text-white px-4 py-2 font-semibold w-fit rounded">Pilotage par indicateurs clés</h3>
+          <ul class="list-disc ml-6 mt-2 text-blue-800 text-sm md:text-base">
+            <li>Dashboard avec KPI</li>
+            <li>Suivi des stocks en "R/Q"</li>
+            <li>Tableau de réapprovisionnement automatique avec alertes</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section #section  id="objectives" class="py-16 px-4 bg-emerald-50 ">
+  <div class= "max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+
+    <!-- Partie gauche : 1/4 -->
+    <div class="md:col-span-1 bg-blue-900 text-white p-6 rounded shadow">
+      <h3 class="text-yellow-400 font-bold uppercase mb-2 text-sm">About Easy Stock Maroc</h3>
+      <h2 class="text-lg font-bold mb-4 uppercase">Qui sommes-nous ?</h2>
+      <p class="text-sm leading-relaxed">
+        EasyStockMaroc est une solution SaaS dédiée à la gestion intelligente des stocks et des fournisseurs pour les PME industrielles et commerciales.
+      </p>
+      <p class="text-sm leading-relaxed mt-4">
+        Notre mission est de simplifier et d’optimiser les opérations supply chain grâce à une plateforme intuitive et performante.
+      </p>
+      <p class="text-sm leading-relaxed mt-4 font-semibold italic">
+        RDS to optimize operations, prevent stockouts, and boost supplier performance.
+      </p>
+    </div>
+
+    <!-- Partie centrale : 2/4 -->
+    <div class="md:col-span-2 space-y-8">
+      <!-- Objectifs -->
+      <div>
+        <h3 class="text-yellow-400 text-xl font-bold mb-2">Nos Objectifs</h3>
+        <ul class="list-disc list-inside bg-blue-100 text-sm text-gray-800 p-4 rounded">
+          <li>Optimiser la gestion de stock pour les PME</li>
+          <li>Réduire les ruptures et les surstocks</li>
+          <li>Suivre en temps réel les performances fournisseurs</li>
+          <li>Offrir un système moderne, simple et abordable</li>
+          <li>Faciliter la prise de décision grâce à des KPIs dynamiques</li>
+        </ul>
+      </div>
+
+      <!-- Cibles -->
+      <div>
+        <h3 class="text-yellow-400 text-xl font-bold mb-2">Nos Cibles</h3>
+        <ul class="list-disc list-inside bg-blue-100 text-sm text-gray-800 p-4 rounded">
+          <li>PME industrielles</li>
+          <li>Distributeurs de fournitures ou d’équipements</li>
+          <li>Supply Chain Managers</li>
+          <li>Responsables approvisionnement</li>
+          <li>Responsables logistique</li>
+          <li>Dirigeants souhaitant digitaliser leur gestion de stock</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Partie droite : 1/4 -->
+    <div class="md:col-span-1 flex justify-center items-start  md:mt-0">
+      <img src="/logol.jpg" alt="EasyStockMaroc Logo" class="max-w-full w-[280px] mt-20">
+    </div>
+
+  </div>
+</section>
+
+<section id="service" class="bg-white py-12 px-4 md:px-16">
+  <div class="flex flex-col lg:flex-row items-center gap-10">
+    <!-- Bloc de gauche -->
+    <div class="relative w-full lg:w-1/2 ml-10">
+      <img src="/testab.jpg" alt="EasyStockMaroc Logo" class="max-w-full w-[280px] max-h-full h-[300px]">
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-900 text-white text-center px-6 py-10">
+        <h2 class="text-2xl md:text-3xl font-bold uppercase leading-snug">
+          Nos 5 modules<br />
+          fonctionnels de<br />
+          notre application
+        </h2>
+      </div>
+    </div>
+
+    <!-- Bloc de droite amélioré -->
+    <div class="w-full lg:w-1/2">
+      <h3 class="text-blue-700 text-lg md:text-xl font-semibold uppercase mb-6 tracking-wide">
+        Pilotage simplifié de votre supply chain
+      </h3>
+
+      <div class="space-y-5">
+        <!-- Module 1 : Fournisseurs -->
+        <div class="flex items-center bg-blue-50 p-5 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+            <!-- Icône fournisseur (bâtiment / partenariat) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 7V4a1 1 0 011-1h3m0 0h8m-8 0v3m8-3v3m0 0h3a1 1 0 011 1v3M3 7h18M3 7v10a1 1 0 001 1h16a1 1 0 001-1V7" />
+            </svg>
+          </div>
+          <p class="text-base font-medium text-blue-900">Gestion des fournisseurs</p>
+        </div>
+
+        <!-- Module 2 : Stocks -->
+        <div class="flex items-center bg-blue-50 p-5 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+            <!-- Icône stock (boîte, entrepôt) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M20 12H4m16 0a8 8 0 10-16 0 8 8 0 0016 0z" />
+            </svg>
+          </div>
+          <p class="text-base font-medium text-blue-900">Gestion des stocks de produits</p>
+        </div>
+
+        <!-- Module 3 : Commandes -->
+        <div class="flex items-center bg-blue-50 p-5 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+            <!-- Icône automatisation (roue dentée) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.75 3l1.5 1.5m1.5-1.5l-1.5 1.5M3 9.75l1.5 1.5m-1.5 1.5l1.5-1.5M20.25 9.75l-1.5 1.5m1.5 1.5l-1.5-1.5M12 21v-1.5M12 3V4.5m7.5 7.5H20M4 12h1.5" />
+            </svg>
+          </div>
+          <p class="text-base font-medium text-blue-900">Automatisation des commandes et réceptions</p>
+        </div>
+
+        <!-- Module 4 : KPIs -->
+        <div class="flex items-center bg-blue-50 p-5 rounded-xl shadow-sm hover:shadow-md transition">
+          <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
+            <!-- Icône KPI (graphe / analyse) -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 11V3H5v18h14V11h-8zm4 6v-4h-4v4h4z" />
+            </svg>
+          </div>
+          <p class="text-base font-medium text-blue-900">Visualiser tous leurs KPIs de manière claire et instantanée</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="service2" #section class="relative bg-cover bg-center text-white" style="background-image: url('/bjp.jpeg');">
+  <div class="bg-black bg-opacity-40">
+    <div class="max-w-4xl mx-auto text-center py-20 px-6">
+      <h3 class="text-yellow-400 text-lg font-semibold mb-2 uppercase tracking-wide">
+        Services We Provide
+      </h3>
+
+      <h2 class="text-2xl md:text-4xl font-extrabold uppercase mb-6 leading-tight">
+        Turn your inventory and supplier operations into a competitive advantage
+      </h2>
+
+      <!-- Icône -->
+      <div class="flex justify-center mb-6">
+        <div class="bg-yellow-400 text-blue-900 p-3 rounded-full">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13 16h-1v-4h-1m0-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+          </svg>
+        </div>
+      </div>
+
+      <p class="text-blue-100 text-base font-bold uppercase mb-1">Trial Version</p>
+      <p class="text-blue-100 text-sm mb-2">
+        Testez toutes les fonctionnalités EasyStockMaroc sans engagement ni paiement pendant 14 jours.
+      </p>
+      <p class="text-white font-extrabold text-base uppercase tracking-wide">
+        14 Days Free Access
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section Contactez-nous -->
+<section #section id="contact" class="bg-blue-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Contactez-nous</h2>
+    <p class="text-blue-700 mb-2">
+      📧 Email : <a href="mailto:easystockmaroc1@gmail.com" class="text-blue-600 underline hover:text-blue-800">contact {{"easystockmaroc1@gmail.com"}} </a>
+    </p>
+    <p class="text-blue-700">
+      📞 Téléphone : <a href="tel:+212641561593" class="text-blue-600 underline hover:text-blue-800">+2126 41 56 15 93</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white text-center py-4">
+  <p class="text-sm">&copy; Ayoub Jaddaoui 2025. Tous droits réservés.</p>
+</footer>
+
